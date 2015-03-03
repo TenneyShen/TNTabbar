@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>032F021A-66E1-4BF8-9BB9-B6FAF7AF3380</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TNTabbar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5AA0919C1802A7C43D5705DFCF019530EABA7DF5</key>
+		<string>https://github.com/TenneyShen/TNTabbar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TNTabbar/TNTabbar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5AA0919C1802A7C43D5705DFCF019530EABA7DF5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TenneyShen/TNTabbar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5AA0919C1802A7C43D5705DFCF019530EABA7DF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5AA0919C1802A7C43D5705DFCF019530EABA7DF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TNTabbar</string>
+		</dict>
+	</array>
+</dict>
+</plist>
