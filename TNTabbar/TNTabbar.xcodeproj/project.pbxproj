@@ -15,6 +15,10 @@
 		9BD215051AA5909400D9570A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD215041AA5909400D9570A /* Images.xcassets */; };
 		9BD215081AA5909400D9570A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD215061AA5909400D9570A /* LaunchScreen.xib */; };
 		9BD215141AA5909400D9570A /* TNTabbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD215131AA5909400D9570A /* TNTabbarTests.m */; };
+		9BD215201AA591B900D9570A /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2151F1AA591B900D9570A /* UITabBar+badge.m */; };
+		9BD215241AA5956B00D9570A /* TNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD215221AA5956B00D9570A /* TNTestViewController.m */; };
+		9BD215251AA5956B00D9570A /* TNTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD215231AA5956B00D9570A /* TNTestViewController.xib */; };
+		9BD215271AA5985000D9570A /* tabbar_home_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD215261AA5985000D9570A /* tabbar_home_normal@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,12 @@
 		9BD2150D1AA5909400D9570A /* TNTabbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNTabbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD215121AA5909400D9570A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD215131AA5909400D9570A /* TNTabbarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTabbarTests.m; sourceTree = "<group>"; };
+		9BD2151E1AA591B900D9570A /* UITabBar+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+badge.h"; sourceTree = "<group>"; };
+		9BD2151F1AA591B900D9570A /* UITabBar+badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+badge.m"; sourceTree = "<group>"; };
+		9BD215211AA5956B00D9570A /* TNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTestViewController.h; sourceTree = "<group>"; };
+		9BD215221AA5956B00D9570A /* TNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTestViewController.m; sourceTree = "<group>"; };
+		9BD215231AA5956B00D9570A /* TNTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNTestViewController.xib; sourceTree = "<group>"; };
+		9BD215261AA5985000D9570A /* tabbar_home_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_normal@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 		9BD214E81AA5909300D9570A = {
 			isa = PBXGroup;
 			children = (
+				9BD2151D1AA5919000D9570A /* Sources */,
 				9BD214F31AA5909400D9570A /* TNTabbar */,
 				9BD215101AA5909400D9570A /* TNTabbarTests */,
 				9BD214F21AA5909400D9570A /* Products */,
@@ -83,8 +94,12 @@
 		9BD214F31AA5909400D9570A /* TNTabbar */ = {
 			isa = PBXGroup;
 			children = (
+				9BD215261AA5985000D9570A /* tabbar_home_normal@2x.png */,
 				9BD214F81AA5909400D9570A /* AppDelegate.h */,
 				9BD214F91AA5909400D9570A /* AppDelegate.m */,
+				9BD215211AA5956B00D9570A /* TNTestViewController.h */,
+				9BD215221AA5956B00D9570A /* TNTestViewController.m */,
+				9BD215231AA5956B00D9570A /* TNTestViewController.xib */,
 				9BD214FE1AA5909400D9570A /* ViewController.h */,
 				9BD214FF1AA5909400D9570A /* ViewController.m */,
 				9BD215011AA5909400D9570A /* Main.storyboard */,
@@ -120,6 +135,15 @@
 				9BD215121AA5909400D9570A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BD2151D1AA5919000D9570A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9BD2151E1AA591B900D9570A /* UITabBar+badge.h */,
+				9BD2151F1AA591B900D9570A /* UITabBar+badge.m */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +228,8 @@
 			files = (
 				9BD215031AA5909400D9570A /* Main.storyboard in Resources */,
 				9BD215081AA5909400D9570A /* LaunchScreen.xib in Resources */,
+				9BD215271AA5985000D9570A /* tabbar_home_normal@2x.png in Resources */,
+				9BD215251AA5956B00D9570A /* TNTestViewController.xib in Resources */,
 				9BD215051AA5909400D9570A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD214FA1AA5909400D9570A /* AppDelegate.m in Sources */,
+				9BD215201AA591B900D9570A /* UITabBar+badge.m in Sources */,
 				9BD214F71AA5909400D9570A /* main.m in Sources */,
 				9BD215001AA5909400D9570A /* ViewController.m in Sources */,
+				9BD215241AA5956B00D9570A /* TNTestViewController.m in Sources */,
 				9BD214FD1AA5909400D9570A /* TNTabbar.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

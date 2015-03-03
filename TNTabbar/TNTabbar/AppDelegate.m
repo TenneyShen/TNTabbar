@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UITabBar+badge.h"
+#import "TNTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    TNTestViewController *testVC1 = [[TNTestViewController alloc]initWithNibName:@"TNTestViewController"
+                                                                          bundle:nil];
+    testVC1.title = @"首页";
+    testVC1.tabBarItem.tag = 888;
+    testVC1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home_normal.png"];
+    
+    TNTestViewController *testVC2 = [[TNTestViewController alloc]initWithNibName:@"TNTestViewController"
+                                                                          bundle:nil];
+    testVC2.title = @"首页";
+    testVC2.tabBarItem.tag = 889;
+    testVC2.tabBarItem.image = [UIImage imageNamed:@"tabbar_home_normal.png"];
+    
+    TNTestViewController *testVC3 = [[TNTestViewController alloc]initWithNibName:@"TNTestViewController"
+                                                                          bundle:nil];
+    testVC3.title = @"首页";
+    testVC3.tabBarItem.tag = 890;
+    testVC3.tabBarItem.image = [UIImage imageNamed:@"tabbar_home_normal.png"];
+    
+    TNTestViewController *testVC4 = [[TNTestViewController alloc]initWithNibName:@"TNTestViewController"
+                                                                          bundle:nil];
+    testVC4.title = @"首页";
+    testVC4.tabBarItem.tag = 891;
+    testVC4.tabBarItem.image = [UIImage imageNamed:@"tabbar_home_normal.png"];
+    
+    UITabBarController *tabViewController = [[UITabBarController alloc]init];
+    tabViewController.viewControllers = @[testVC1,testVC2,testVC3,testVC4];
+    
+    
+    self.window.rootViewController = tabViewController;
+
+    [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     return YES;
 }
